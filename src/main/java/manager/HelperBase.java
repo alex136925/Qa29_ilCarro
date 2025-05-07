@@ -7,7 +7,9 @@ import org.openqa.selenium.WebElement;
 public class HelperBase {
     WebDriver wd;
 
-    public HelperBase(WebDriver wd){ this.wd = wd;}
+    public HelperBase(WebDriver wd){
+        this.wd = wd;
+    }
 
     public void type(By locator, String text){
         WebElement element = wd.findElement(locator);
