@@ -1,8 +1,10 @@
 package manager;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.time.Duration;
 
 public class HelperBase {
     WebDriver wd;
@@ -25,4 +27,35 @@ public class HelperBase {
         WebElement element = wd.findElement(locator);
         element.click();
     }
+
+    public boolean isAlertPresent(String message){
+        WebElement alert = new WebDriverWait(wd, Duration.ofSeconds(10))
+                .until(ExpectedConditions.elementToBeClickable (By.cssSelector(".dialog-container>h2")));
+        if (alert != null && alert.getText().contains(message)){
+            alert.click();
+            return  true;
+        }
+        return  false;
+    }
+
+    public boolean isLoginFormPresent() {
+        try {
+            WebElement loginForm = wd.findElement(By.xpath("//a[text()=' Log in ']"));
+            return loginForm.isDisplayed();
+        } catch (NoSuchElementException e) {
+            return false;
+        }
+    }
+
+
+    public boolean isLogoutVisible() {
+        try {
+            WebElement logOut = wd.findElement(By.xpath("//*[text()=' Log out ']"));
+            return logOut.isDisplayed();
+        } catch (NoSuchElementException e) {
+            return false;
+        }
+    }
 }
+
+
