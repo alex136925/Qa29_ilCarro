@@ -56,6 +56,19 @@ public class HelperBase {
             return false;
         }
     }
+
+    public  void pause(int time){
+        try {
+            Thread.sleep(time);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    public boolean isElementPresent(By locator){
+
+        return wd.findElements(locator).size() > 0;
+    }
 }
 
 

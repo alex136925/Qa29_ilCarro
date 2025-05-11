@@ -1,5 +1,6 @@
 package tests;
 
+import models.User;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
@@ -12,7 +13,7 @@ public class LoginTests extends TestBase{
     @BeforeMethod
     public void ensureLoginFormIsOpen() {
         if (!app.getHelperUser().isLoginFormPresent()) {
-            app.getHelperUser().signOut(); // or refresh if no sign-out
+            app.getHelperUser().signOut();
             app.getHelperUser().openLoginForm();
         }
     }
@@ -20,10 +21,25 @@ public class LoginTests extends TestBase{
 
 
     @Test
+    public void testLoginSuccess1(){
+        User user = new User().setEmail("tipsytutor92@gmail.com").setPassword("West1234$");
+//        user.setEmail("tipsytutor92@gmail.com");
+//        user.setPassword("West1234$");
+        app.getHelperUser().openLoginForm();
+        app.getHelperUser().fillLoginForm(user);
+        app.getHelperUser().submit();
+        //Assert if element with text "login Success" is present OK
+        Assert.assertTrue(app.getHelperUser().isAlertPresent("Logged in success"));
+        app.getHelperUser().clickOkButton();
+
+    }
+
+
+    @Test
     public void testLoginSuccess(){
         app.getHelperUser().openLoginForm();
         app.getHelperUser().fillLoginForm("tipsytutor92@gmail.com", "West1234$");
-        app.getHelperUser().submitLogin();
+        app.getHelperUser().submit();
         //Assert if element with text "login Success" is present OK
         Assert.assertTrue(app.getHelperUser().isAlertPresent("Logged in success"));
         app.getHelperUser().clickOkButton();
@@ -35,7 +51,7 @@ public class LoginTests extends TestBase{
     public void testLoginWrongEmail(){
         app.getHelperUser().openLoginForm();
         app.getHelperUser().fillLoginForm("tipsytutor92gmail.com", "West1234$");
-        app.getHelperUser().submitLogin();
+        app.getHelperUser().submit();
         Assert.assertEquals(app.getHelperUser().getFailMessage(), "It'snot look like email");
 
     }
@@ -44,7 +60,7 @@ public class LoginTests extends TestBase{
     public void testLoginWrongPassword(){
         app.getHelperUser().openLoginForm();
         app.getHelperUser().fillLoginForm("tipsytutor@92gmail.com", "West1");
-        app.getHelperUser().submitLogin();
+        app.getHelperUser().submit();
         Assert.assertEquals(app.getHelperUser().getMessage(), "\"Login or Password incorrect\"");
         app.getHelperUser().clickOkButton();
 
@@ -54,7 +70,7 @@ public class LoginTests extends TestBase{
     public void testUnregisteredUser(){
         app.getHelperUser().openLoginForm();
         app.getHelperUser().fillLoginForm("tipsy@gmail.com", "West1234$");
-        app.getHelperUser().submitLogin();
+        app.getHelperUser().submit();
         Assert.assertEquals(app.getHelperUser().getMessage(), "\"Login or Password incorrect\"");
         app.getHelperUser().clickOkButton();
 
