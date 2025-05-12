@@ -76,12 +76,14 @@ public class HelperUser extends HelperBase {
     }
 
     public boolean isLogged() {
-        WebElement element = wd.findElement(By.xpath("//*[text() = ' Logout ']"));
+        WebElement element = wd.findElement(By.xpath("//*[normalize-space(text()) = 'Logout']"));
         return element.isDisplayed();
     }
 
     public void openRegistrationForm() {
-        click(By.xpath("//a[text()=' Sign up ']"));
+        WebDriverWait wait = new WebDriverWait(wd, Duration.ofSeconds(5));
+        WebElement signUpBtn = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[normalize-space(text())='Sign up']")));
+        signUpBtn.click();
     }
 
     public void fillRegistrationForm(User user) {

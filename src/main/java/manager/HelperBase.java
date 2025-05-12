@@ -38,6 +38,20 @@ public class HelperBase {
         return  false;
     }
 
+    public boolean isEmailAlertPresent(String message){
+        WebElement alert = new WebDriverWait(wd, Duration.ofSeconds(10))
+                .until(ExpectedConditions.visibilityOfElementLocated (By.xpath("//div[contains(text(), 'Wrong')]")));
+        return alert != null && alert.getText().contains(message);
+    }
+
+    public boolean isPasswordAlertPresent(String message){
+        WebElement alert = new WebDriverWait(wd, Duration.ofSeconds(10))
+                .until(ExpectedConditions.visibilityOfElementLocated (By.xpath("//div[contains(text(), 'must')]")));
+        return alert != null && alert.getText().contains(message);
+
+
+    }
+
     public boolean isLoginFormPresent() {
         try {
             WebElement loginForm = wd.findElement(By.xpath("//a[text()=' Log in ']"));
@@ -57,7 +71,7 @@ public class HelperBase {
         }
     }
 
-    public  void pause(int time){
+    public void pause(int time){
         try {
             Thread.sleep(time);
         } catch (InterruptedException e) {
