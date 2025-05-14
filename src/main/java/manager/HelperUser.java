@@ -1,13 +1,12 @@
 package manager;
 
 import models.User;
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import javax.swing.*;
 import java.time.Duration;
 
 public class HelperUser extends HelperBase {
@@ -101,6 +100,26 @@ public class HelperUser extends HelperBase {
         //option 3
         JavascriptExecutor js = (JavascriptExecutor) wd;
         js.executeScript("document.querySelector('#terms-of-use').click();");
+    }
+
+    public void checkPolicyXY(){
+        WebElement label = wd.findElement(By.cssSelector("label[for='terms-of-use']"));
+
+        Rectangle rec = label.getRect();
+        int w = rec.getWidth();
+
+        int xOffSet = -w / 2;
+
+
+        Actions actions = new Actions(wd);
+        actions.moveToElement(label, xOffSet, 0).click().release().perform();
+    }
+
+    public void login(User user) {
+        openLoginForm();
+        fillLoginForm(user);
+        submit();
+        clickOkButton();
     }
 
     //"button[disabled]" for Yallah button
