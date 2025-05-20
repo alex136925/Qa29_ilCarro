@@ -38,21 +38,26 @@ public class HelperUser extends HelperBase {
         type(By.id("password"), user.getPassword());
     }
 
-    public void submit() {
-        click(By.xpath("//*[@type='submit']"));
-    }
 
-    public String getMessage() {
-//        WebElement element = wd.findElement(By.cssSelector(".dialog-container>h2"));
-//        String text = element.getText();
-//        return text;
-        pause(2000);
-        return wd.findElement(By.cssSelector(".dialog-container>h2")).getText();
 
-    }
+
 
     public String getFailMessage() {
         return wd.findElement(By.xpath("//*[contains(text(), 'look like email')]")).getText();
+    }
+
+    public String getErrorText() {
+        return wd.findElement(By.cssSelector("div.error")).getText();
+    }
+
+    public boolean isYallaButtonNotActive() {
+        boolean res = isElementPresent(By.cssSelector("button[disabled]"));
+//=========================
+        WebElement element = wd.findElement(By.cssSelector("button[type = 'submit']"));
+        boolean result = element.isEnabled();
+
+        return res && !result;
+
     }
 
 
@@ -75,8 +80,12 @@ public class HelperUser extends HelperBase {
     }
 
     public boolean isLogged() {
-        WebElement element = wd.findElement(By.xpath("//*[normalize-space(text()) = 'Logout']"));
-        return element.isDisplayed();
+        try {
+            WebElement element = wd.findElement(By.xpath("//*[normalize-space(text()) = 'Logout']"));
+            return element.isDisplayed();
+        } catch (NoSuchElementException e) {
+            return false;
+        }
     }
 
     public void openRegistrationForm() {
@@ -103,16 +112,20 @@ public class HelperUser extends HelperBase {
     }
 
     public void checkPolicyXY(){
-        WebElement label = wd.findElement(By.cssSelector("label[for='terms-of-use']"));
-
-        Rectangle rec = label.getRect();
-        int w = rec.getWidth();
-
-        int xOffSet = -w / 2;
+        if (wd.findElement(By.id("terms-of-use")).isSelected()) {
 
 
-        Actions actions = new Actions(wd);
-        actions.moveToElement(label, xOffSet, 0).click().release().perform();
+            WebElement label = wd.findElement(By.cssSelector("label[for='terms-of-use']"));
+
+            Rectangle rec = label.getRect();
+            int w = rec.getWidth();
+
+            int xOffSet = -w / 2;
+
+
+            Actions actions = new Actions(wd);
+            actions.moveToElement(label, xOffSet, 0).click().release().perform();
+        }
     }
 
     public void login(User user) {
@@ -121,6 +134,8 @@ public class HelperUser extends HelperBase {
         submit();
         clickOkButton();
     }
+
+
 
     //"button[disabled]" for Yallah button
     // WebElement element = wd.findElement(By.cssSelector("button[type = 'submit'));

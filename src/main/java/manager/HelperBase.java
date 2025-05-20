@@ -18,9 +18,15 @@ public class HelperBase {
 
         element.click();
         element.clear();
+        clearNew(element);
         if (text != null){
             element.sendKeys(text);
         }
+    }
+
+    public  void clearNew(WebElement element){
+        element.sendKeys(" ");
+        element.sendKeys(Keys.BACK_SPACE);
     }
 
     public void click(By locator){
@@ -61,6 +67,14 @@ public class HelperBase {
         }
     }
 
+    public String getMessage() {
+//        WebElement element = wd.findElement(By.cssSelector(".dialog-container>h2"));
+//        String text = element.getText();
+//        return text;
+        pause(2000);
+        return wd.findElement(By.cssSelector(".dialog-container>h2")).getText();
+
+    }
 
     public boolean isLogoutVisible() {
         try {
@@ -77,6 +91,10 @@ public class HelperBase {
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
+    }
+
+    public void submit() {
+        click(By.xpath("//*[@type='submit']"));
     }
 
     public boolean isElementPresent(By locator){
