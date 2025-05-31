@@ -1,0 +1,4 @@
+13:16:17.747 INFO  tests.TestBase - === Starting test: testLoginSuccess1 ===
+13:16:17.766 INFO  manager.TestNGListener - Start test --->testLoginSuccess1
+13:16:19.426 INFO  tests.TestBase - Test data --> email: tipsytutor92@gmail.com & password: West1234$ 
+13:16:19.467 INFO  manager.TestNGListener - Success test --->testLoginSuccess1

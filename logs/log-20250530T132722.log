@@ -1,0 +1,10 @@
+13:27:25.231 INFO  tests.TestBase - === Starting test: testLoginSuccess ===
+13:27:26.799 INFO  tests.TestBase - Test data --> email: tipsytutor92@gmail.com & password: West1234$ 
+13:27:26.866 INFO  tests.TestBase - === Starting test: testLoginSuccess1 ===
+13:27:32.738 INFO  tests.TestBase - Test data --> email: tipsytutor92@gmail.com & password: West1234$ 
+13:27:32.788 INFO  tests.TestBase - === Starting test: testLoginWrongEmail ===
+13:27:38.278 INFO  tests.TestBase - Test data --> email: tipsytutor92gmail.com & password: West1234$ 
+13:27:38.278 INFO  tests.TestBase - === Starting test: testLoginWrongPassword ===
+13:27:40.772 INFO  tests.TestBase - Test data --> email: tipsytutor92@gmail.com & password: West1
+13:27:40.822 INFO  tests.TestBase - === Starting test: testUnregisteredUser ===
+13:27:43.237 INFO  tests.TestBase - Test data --> email: tipsy@gmail.com & password: West1234$ 

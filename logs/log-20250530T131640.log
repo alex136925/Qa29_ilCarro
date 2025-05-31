@@ -1,0 +1,19 @@
+13:16:42.997 INFO  tests.TestBase - === Starting test: testLoginSuccess ===
+13:16:43.020 INFO  manager.TestNGListener - Start test --->testLoginSuccess
+13:16:54.014 INFO  manager.TestNGListener - Fail test --->testLoginSuccess
+13:16:54.021 INFO  tests.TestBase - === Starting test: testLoginSuccess1 ===
+13:16:54.035 INFO  manager.TestNGListener - Start test --->testLoginSuccess1
+13:16:55.563 INFO  tests.TestBase - Test data --> email: tipsytutor92@gmail.com & password: West1234$ 
+13:16:55.612 INFO  manager.TestNGListener - Success test --->testLoginSuccess1
+13:16:55.612 INFO  tests.TestBase - === Starting test: testLoginWrongEmail ===
+13:17:00.824 INFO  manager.TestNGListener - Start test --->testLoginWrongEmail
+13:17:01.337 INFO  tests.TestBase - Test data --> email: tipsytutor92gmail.com & password: West1234$ 
+13:17:01.337 INFO  manager.TestNGListener - Success test --->testLoginWrongEmail
+13:17:01.337 INFO  tests.TestBase - === Starting test: testLoginWrongPassword ===
+13:17:01.356 INFO  manager.TestNGListener - Start test --->testLoginWrongPassword
+13:17:03.786 INFO  tests.TestBase - Test data --> email: tipsytutor92@gmail.com & password: West1
+13:17:03.833 INFO  manager.TestNGListener - Success test --->testLoginWrongPassword
+13:17:03.833 INFO  tests.TestBase - === Starting test: testUnregisteredUser ===
+13:17:03.836 INFO  manager.TestNGListener - Start test --->testUnregisteredUser
+13:17:06.280 INFO  tests.TestBase - Test data --> email: tipsy@gmail.com & password: West1234$ 
+13:17:06.317 INFO  manager.TestNGListener - Success test --->testUnregisteredUser

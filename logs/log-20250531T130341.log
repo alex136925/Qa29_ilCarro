@@ -1,0 +1,39 @@
+13:03:44.617 INFO  manager.ApplicationManager - All tests run in Chrome Browser
+13:03:44.824 INFO  manager.WDListener - Url-->https://ilcarro.web.app/
+13:03:46.299 INFO  tests.TestBase - === Starting test: searchAnyPeriodSuccess ===
+13:03:46.300 INFO  manager.TestNGListener - Start test --->searchAnyPeriodSuccess
+13:03:46.301 INFO  manager.WDListener - Before find element -->By.id: city
+13:03:46.316 INFO  manager.WDListener - After find element -->By.id: city
+13:03:46.333 INFO  manager.WDListener - Location of element (256, 289)
+13:03:46.346 INFO  manager.WDListener - Before click element -->inputtext = 
+13:03:46.417 INFO  manager.WDListener - After click element -->input
+13:03:46.473 INFO  manager.WDListener - sendKeys -->inputtext
+13:03:46.500 INFO  manager.WDListener - sendKeys -->inputtext
+13:03:46.521 INFO  manager.WDListener - sendKeys -->inputtext
+13:03:46.521 INFO  manager.WDListener - Before find element -->By.cssSelector: div.pac-item
+13:03:47.273 INFO  manager.WDListener - After find element -->By.cssSelector: div.pac-item
+13:03:47.279 INFO  manager.WDListener - Location of element (256, 341)
+13:03:47.285 INFO  manager.WDListener - Before click element -->divtext = RehovotIsrael
+13:03:47.334 INFO  manager.WDListener - Before find element -->By.id: dates
+13:03:47.354 INFO  manager.WDListener - After find element -->By.id: dates
+13:03:47.359 INFO  manager.WDListener - Location of element (256, 388)
+13:03:47.372 INFO  manager.WDListener - Before click element -->inputtext = 
+13:03:47.425 INFO  manager.WDListener - After click element -->input
+13:03:47.435 INFO  manager.WDListener - Before find element -->By.xpath: //button[@aria-label='Choose date']
+13:03:52.440 INFO  manager.WDListener - Huston, we have a problem!
+13:03:52.440 INFO  manager.WDListener - Object target --> ChromeDriver: chrome on windows (c4f1ad34fa4e704177960e0869aac111)
+13:03:52.440 INFO  manager.WDListener - ******************************
+13:03:52.440 INFO  manager.WDListener - Method name -->findElement
+13:03:52.440 INFO  manager.WDListener - ******************************
+13:03:52.440 INFO  manager.WDListener - InvocationTargetExceptionorg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[@aria-label='Choose date']"}
+  (Session info: chrome=137.0.7151.41)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.21'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c4f1ad34fa4e704177960e0869aac111, findElement {using=xpath, value=//button[@aria-label='Choose date']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.41, chrome: {chromedriverVersion: 137.0.7151.40 (84781974514a..., userDataDir: C:\Users\kalin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55492}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55492/devtoo..., se:cdpVersion: 137.0.7151.41, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c4f1ad34fa4e704177960e0869aac111
+13:03:52.448 INFO  manager.WDListener - ******************************
+13:03:52.755 INFO  manager.WDListener - Screen with error is --->src/test/screenshots/screen_1867.png
+13:03:52.755 INFO  manager.TestNGListener - Fail test --->searchAnyPeriodSuccess

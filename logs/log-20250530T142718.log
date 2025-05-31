@@ -1,0 +1,35 @@
+14:27:21.189 INFO  manager.ApplicationManager - All tests run in Chrome Browser
+14:27:21.401 INFO  manager.WDListener - Url-->https://ilcarro.web.app/
+14:27:23.206 INFO  tests.TestBase - === Starting test: searchCurrentMonthSuccess ===
+14:27:23.207 INFO  manager.TestNGListener - Start test --->searchCurrentMonthSuccess
+14:27:23.208 INFO  manager.WDListener - Before find element -->By.id: city
+14:27:23.226 INFO  manager.WDListener - After find element -->By.id: city
+14:27:23.236 INFO  manager.WDListener - Location of element (256, 289)
+14:27:23.246 INFO  manager.WDListener - Before click element -->inputtext = 
+14:27:23.324 INFO  manager.WDListener - After click element -->input
+14:27:23.384 INFO  manager.WDListener - sendKeys -->inputtext
+14:27:23.406 INFO  manager.WDListener - sendKeys -->inputtext
+14:27:23.436 INFO  manager.WDListener - sendKeys -->inputtext
+14:27:23.436 INFO  manager.WDListener - Before find element -->By.cssSelector: div.pac-item
+14:27:23.931 INFO  manager.WDListener - After find element -->By.cssSelector: div.pac-item
+14:27:23.938 INFO  manager.WDListener - Location of element (256, 341)
+14:27:23.947 INFO  manager.WDListener - Before click element -->divtext = RehovotIsrael
+14:27:23.991 INFO  manager.WDListener - Before find element -->By.id: dates
+14:27:24.005 INFO  manager.WDListener - After find element -->By.id: dates
+14:27:24.011 INFO  manager.WDListener - Location of element (256, 388)
+14:27:24.023 INFO  manager.WDListener - Before click element -->inputtext = 
+14:27:24.086 INFO  manager.WDListener - After click element -->input
+14:27:24.086 INFO  manager.WDListener - Before find element -->By.xpath: //div[text() = ' 30 ']
+14:27:24.101 INFO  manager.WDListener - After find element -->By.xpath: //div[text() = ' 30 ']
+14:27:24.107 INFO  manager.WDListener - Location of element (466, 673)
+14:27:24.125 INFO  manager.WDListener - Before click element -->divtext = 30
+14:27:24.185 INFO  manager.WDListener - Before find element -->By.xpath: //div[text() = ' 31 ']
+14:27:24.196 INFO  manager.WDListener - After find element -->By.xpath: //div[text() = ' 31 ']
+14:27:24.207 INFO  manager.WDListener - Location of element (506, 705)
+14:27:24.223 INFO  manager.WDListener - Before click element -->divtext = 31
+14:27:24.282 INFO  manager.WDListener - After click element -->div
+14:27:24.282 INFO  manager.WDListener - Before find element -->By.xpath: //*[@type='submit']
+14:27:24.296 INFO  manager.WDListener - After find element -->By.xpath: //*[@type='submit']
+14:27:24.306 INFO  manager.WDListener - Location of element (256, 444)
+14:27:24.316 INFO  manager.WDListener - Before click element -->buttontext = Y’alla!
+14:27:24.375 INFO  manager.TestNGListener - Success test --->searchCurrentMonthSuccess

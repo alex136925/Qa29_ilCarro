@@ -1,5 +1,6 @@
 package tests;
 
+import manager.DataProviderUser;
 import models.User;
 import org.testng.Assert;
 import org.testng.IRetryAnalyzer;
@@ -37,9 +38,21 @@ public class RegistrationTests extends TestBase{
         app.getHelperUser().signOut();
     }
 
+    @Test(dataProvider = "registrationModels", dataProviderClass = DataProviderUser.class)
+    public void registrationSuccessModel(User user){
+
+        app.getHelperUser().openRegistrationForm();
+        app.getHelperUser().fillRegistrationForm(user);
+        app.getHelperUser().checkPolicy();
+        app.getHelperUser().submit();
+        Assert.assertTrue(app.getHelperUser().isAlertPresent("You are logged in success"));
+        app.getHelperUser().clickOkButton();
+        app.getHelperUser().signOut();
+    }
+
     @Test(enabled = false)
-    public void registrationWrongEmail(){
-        int z = (int) (System.currentTimeMillis()/1000%3600);
+    public void registrationWrongEmail() {
+        int z = (int) (System.currentTimeMillis() / 1000 % 3600);
 
         User user = new User()
                 .setFirstName("Henry")

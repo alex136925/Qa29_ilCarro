@@ -1,0 +1,65 @@
+21:03:24.097 INFO  manager.ApplicationManager - All tests run in Chrome Browser
+21:03:24.282 INFO  manager.WDListener - Url-->https://ilcarro.web.app/
+21:03:25.643 INFO  tests.TestBase - === Starting test: searchCurrentYearSuccess ===
+21:03:25.645 INFO  manager.TestNGListener - Start test --->searchCurrentYearSuccess
+21:03:25.645 INFO  manager.WDListener - Before find element -->By.id: city
+21:03:25.667 INFO  manager.WDListener - After find element -->By.id: city
+21:03:25.677 INFO  manager.WDListener - Location of element (256, 289)
+21:03:25.693 INFO  manager.WDListener - Before click element -->inputtext = 
+21:03:25.741 INFO  manager.WDListener - After click element -->input
+21:03:25.801 INFO  manager.WDListener - sendKeys -->inputtext
+21:03:25.831 INFO  manager.WDListener - sendKeys -->inputtext
+21:03:25.860 INFO  manager.WDListener - sendKeys -->inputtext
+21:03:25.860 INFO  manager.WDListener - Before find element -->By.cssSelector: div.pac-item
+21:03:26.478 INFO  manager.WDListener - After find element -->By.cssSelector: div.pac-item
+21:03:26.485 INFO  manager.WDListener - Location of element (256, 341)
+21:03:26.496 INFO  manager.WDListener - Before click element -->divtext = RehovotIsrael
+21:03:26.540 INFO  manager.WDListener - Before find element -->By.id: dates
+21:03:26.557 INFO  manager.WDListener - After find element -->By.id: dates
+21:03:26.564 INFO  manager.WDListener - Location of element (256, 388)
+21:03:26.571 INFO  manager.WDListener - Before click element -->inputtext = 
+21:03:26.640 INFO  manager.WDListener - After click element -->input
+21:03:26.641 INFO  manager.WDListener - Before find element -->By.xpath: //button[@aria-label='Next month']
+21:03:26.656 INFO  manager.WDListener - After find element -->By.xpath: //button[@aria-label='Next month']
+21:03:26.661 INFO  manager.WDListener - Location of element (506, 458)
+21:03:26.676 INFO  manager.WDListener - Before click element -->buttontext = 
+21:03:26.736 INFO  manager.WDListener - After click element -->button
+21:03:26.736 INFO  manager.WDListener - Before find element -->By.xpath: //button[@aria-label='Next month']
+21:03:26.741 INFO  manager.WDListener - After find element -->By.xpath: //button[@aria-label='Next month']
+21:03:26.753 INFO  manager.WDListener - Location of element (506, 460)
+21:03:26.769 INFO  manager.WDListener - Before click element -->buttontext = 
+21:03:26.811 INFO  manager.WDListener - After click element -->button
+21:03:26.811 INFO  manager.WDListener - Before find element -->By.xpath: //div[text()=' 3 ']
+21:03:26.822 INFO  manager.WDListener - After find element -->By.xpath: //div[text()=' 3 ']
+21:03:26.830 INFO  manager.WDListener - Location of element (426, 585)
+21:03:26.834 INFO  manager.WDListener - Before click element -->divtext = 3
+21:03:26.872 INFO  manager.WDListener - Before find element -->By.xpath: //button[@aria-label='Next month']
+21:03:26.891 INFO  manager.WDListener - After find element -->By.xpath: //button[@aria-label='Next month']
+21:03:26.891 INFO  manager.WDListener - Location of element (506, 460)
+21:03:26.911 INFO  manager.WDListener - Before click element -->buttontext = 
+21:03:26.961 INFO  manager.WDListener - After click element -->button
+21:03:26.961 INFO  manager.WDListener - Before find element -->By.xpath: //button[@aria-label='Next month']
+21:03:26.970 INFO  manager.WDListener - After find element -->By.xpath: //button[@aria-label='Next month']
+21:03:26.978 INFO  manager.WDListener - Location of element (506, 460)
+21:03:26.991 INFO  manager.WDListener - Before click element -->buttontext = 
+21:03:27.041 INFO  manager.WDListener - After click element -->button
+21:03:27.041 INFO  manager.WDListener - Before find element -->By.xpath: //button[@aria-label='Next month']
+21:03:27.051 INFO  manager.WDListener - After find element -->By.xpath: //button[@aria-label='Next month']
+21:03:27.060 INFO  manager.WDListener - Location of element (506, 460)
+21:03:27.066 INFO  manager.WDListener - Before click element -->buttontext = 
+21:03:27.101 INFO  manager.WDListener - After click element -->button
+21:03:27.101 INFO  manager.WDListener - Before find element -->By.xpath: //button[@aria-label='Next month']
+21:03:27.118 INFO  manager.WDListener - After find element -->By.xpath: //button[@aria-label='Next month']
+21:03:27.120 INFO  manager.WDListener - Location of element (506, 460)
+21:03:27.136 INFO  manager.WDListener - Before click element -->buttontext = 
+21:03:27.171 INFO  manager.WDListener - After click element -->button
+21:03:27.171 INFO  manager.WDListener - Before find element -->By.xpath: //div[text()=' 16 ']
+21:03:27.185 INFO  manager.WDListener - After find element -->By.xpath: //div[text()=' 16 ']
+21:03:27.191 INFO  manager.WDListener - Location of element (266, 665)
+21:03:27.191 INFO  manager.WDListener - Before click element -->divtext = 16
+21:03:27.239 INFO  manager.WDListener - After click element -->div
+21:03:27.239 INFO  manager.WDListener - Before find element -->By.xpath: //*[@type='submit']
+21:03:27.252 INFO  manager.WDListener - After find element -->By.xpath: //*[@type='submit']
+21:03:27.259 INFO  manager.WDListener - Location of element (256, 444)
+21:03:27.275 INFO  manager.WDListener - Before click element -->buttontext = Y’alla!
+21:03:29.114 INFO  manager.TestNGListener - Success test --->searchCurrentYearSuccess
