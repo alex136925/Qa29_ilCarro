@@ -123,22 +123,66 @@ public class HelperCar extends HelperBase{
         typeCity(city);
         click(By.id("dates"));
 
-        LocalDate from = LocalDate.parse(dateFrom, DateTimeFormatter.ofPattern("M/d/yyyy"));
-        LocalDate to = LocalDate.parse(dateTo, DateTimeFormatter.ofPattern("M/d/yyyy"));
+        LocalDate now = LocalDate.now();
+        LocalDate from = LocalDate.parse(dateFrom, DateTimeFormatter.ofPattern("M/dd/yyyy"));
+        LocalDate to = LocalDate.parse(dateTo, DateTimeFormatter.ofPattern("M/dd/yyyy"));
 
-        String monthFrom = from.getMonth().toString().substring(0, 3).toUpperCase();
-        String monthTo = to.getMonth().toString().substring(0, 3).toUpperCase();
+        int diffYear;
+        int diffMonth;
 
-        click(By.xpath("//button[@aria-label='Choose month and year']"));
-        click(By.xpath("//div[text()=' " + from.getYear() + " ']"));
-        click(By.xpath("//div[text()=' " + monthFrom + " ']"));
-        click(By.xpath("//div[text()=' " + from.getDayOfMonth() + " ']"));
+        //***from
+        diffYear = from.getYear() - now.getYear();
+        if (diffYear == 0){
+            diffMonth = from.getMonthValue() - now.getMonthValue();
+        } else {
+            diffMonth = 12 - now.getMonthValue();
+        }
 
-        click(By.xpath("//button[@aria-label='Choose month and year']"));
-        click(By.xpath("//div[text()=' " + to.getYear() + " ']"));
-        click(By.xpath("//div[text()=' " + monthTo + " ']"));
-        click(By.xpath("//div[text()=' " + to.getDayOfMonth() + " ']"));
+        clickNextMonthBtn(diffMonth);
+        click(By.xpath("//div[text()=' "+from.getDayOfMonth()+" ']"));
 
+        //***to
+        diffYear = to.getYear() - from.getYear();
+        if (diffMonth==0){
+            diffMonth = to.getMonthValue() - from.getMonthValue();
+        } else {
+            diffMonth = 12 - from.getMonthValue() + to.getMonthValue();
+        }
+
+        clickNextMonthBtn(diffMonth);
+        click(By.xpath("//div[text()=' "+to.getDayOfMonth()+" ']"));
+
+
+
+
+//        LocalDate from = LocalDate.parse(dateFrom, DateTimeFormatter.ofPattern("M/d/yyyy"));
+//        LocalDate to = LocalDate.parse(dateTo, DateTimeFormatter.ofPattern("M/d/yyyy"));
+//
+//        String monthFrom = from.getMonth().toString().substring(0, 3).toUpperCase();
+//        String monthTo = to.getMonth().toString().substring(0, 3).toUpperCase();
+//
+//        click(By.xpath("//button[@aria-label='Choose month and year']"));
+//        click(By.xpath("//div[text()=' " + from.getYear() + " ']"));
+//        click(By.xpath("//div[text()=' " + monthFrom + " ']"));
+//        click(By.xpath("//div[text()=' " + from.getDayOfMonth() + " ']"));
+//
+//        click(By.xpath("//button[@aria-label='Choose month and year']"));
+//        click(By.xpath("//div[text()=' " + to.getYear() + " ']"));
+//        click(By.xpath("//div[text()=' " + monthTo + " ']"));
+//        click(By.xpath("//div[text()=' " + to.getDayOfMonth() + " ']"));
+
+    }
+
+    public void searchNotValidPeriod(String city, String dateFrom, String dateTo) {
+        typeCity(city);
+        clearTextBox(By.id("dates"));
+        type(By.id("dates"), dateFrom+" - "+dateTo);
+        click(By.cssSelector("div.cdk-overlay-backdrop"));
+
+    }
+
+    public  void navigateByLogo(){
+        click(By.cssSelector("a.logo"));
     }
 
 }

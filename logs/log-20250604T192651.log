@@ -1,0 +1,50 @@
+19:26:52.382 INFO  manager.ApplicationManager - All tests run in Chrome Browser
+19:26:52.564 INFO  manager.WDListener - Url-->https://ilcarro.web.app/
+19:26:53.886 INFO  tests.TestBase - === Starting test: negativeSearch ===
+19:26:53.887 INFO  manager.TestNGListener - Start test --->negativeSearch
+19:26:53.889 INFO  manager.WDListener - Before find element -->By.id: city
+19:26:53.909 INFO  manager.WDListener - After find element -->By.id: city
+19:26:53.922 INFO  manager.WDListener - Location of element (256, 289)
+19:26:53.938 INFO  manager.WDListener - Before click element -->inputtext = 
+19:26:53.988 INFO  manager.WDListener - After click element -->input
+19:26:54.052 INFO  manager.WDListener - sendKeys -->inputtext
+19:26:54.077 INFO  manager.WDListener - sendKeys -->inputtext
+19:26:54.106 INFO  manager.WDListener - sendKeys -->inputtext
+19:26:54.106 INFO  manager.WDListener - Before find element -->By.cssSelector: div.pac-item
+19:26:54.775 INFO  manager.WDListener - After find element -->By.cssSelector: div.pac-item
+19:26:54.780 INFO  manager.WDListener - Location of element (256, 341)
+19:26:54.790 INFO  manager.WDListener - Before click element -->divtext = RehovotIsrael
+19:26:54.833 INFO  manager.WDListener - Before find element -->By.id: dates
+19:26:54.853 INFO  manager.WDListener - After find element -->By.id: dates
+19:26:54.859 INFO  manager.WDListener - Location of element (256, 388)
+19:26:54.905 INFO  manager.WDListener - sendKeys -->inputtext
+19:26:54.935 INFO  manager.WDListener - sendKeys -->inputtext
+19:26:54.935 INFO  manager.WDListener - Before find element -->By.id: dates
+19:26:54.946 INFO  manager.WDListener - After find element -->By.id: dates
+19:26:54.953 INFO  manager.WDListener - Location of element (256, 388)
+19:26:54.959 INFO  manager.WDListener - Before click element -->inputtext = 
+19:26:55.045 INFO  manager.WDListener - After click element -->input
+19:26:55.121 INFO  manager.WDListener - sendKeys -->inputtext
+19:26:55.149 INFO  manager.WDListener - sendKeys -->inputtext
+19:26:55.197 INFO  manager.WDListener - sendKeys -->inputtext
+19:26:55.197 INFO  manager.WDListener - Before find element -->By.cssSelector: div.cdk-overlay-backdrop
+19:26:55.215 INFO  manager.WDListener - After find element -->By.cssSelector: div.cdk-overlay-backdrop
+19:26:55.222 INFO  manager.WDListener - Location of element (0, 0)
+19:26:55.229 INFO  manager.WDListener - Before click element -->divtext = 
+19:26:55.269 INFO  manager.WDListener - After click element -->div
+19:26:55.270 INFO  manager.WDListener - Before find element -->By.xpath: //*[@type='submit']
+19:26:55.284 INFO  manager.WDListener - After find element -->By.xpath: //*[@type='submit']
+19:26:55.290 INFO  manager.WDListener - Location of element (256, 482)
+19:26:55.297 INFO  manager.WDListener - Before click element -->buttontext = Y’alla!
+19:26:55.346 INFO  manager.WDListener - After click element -->button
+19:26:55.373 INFO  manager.WDListener - Before find element -->By.cssSelector: button[type = 'submit']
+19:26:55.388 INFO  manager.WDListener - After find element -->By.cssSelector: button[type = 'submit']
+19:26:55.395 INFO  manager.WDListener - Location of element (256, 482)
+19:26:55.408 INFO  manager.WDListener - Before find element -->By.cssSelector: div.error
+19:26:55.419 INFO  manager.WDListener - After find element -->By.cssSelector: div.error
+19:26:55.425 INFO  manager.WDListener - Location of element (256, 419)
+19:26:55.431 INFO  manager.TestNGListener - Success test --->negativeSearch
+19:26:55.432 INFO  manager.WDListener - Before find element -->By.cssSelector: a.logo
+19:26:55.445 INFO  manager.WDListener - After find element -->By.cssSelector: a.logo
+19:26:55.453 INFO  manager.WDListener - Location of element (256, 16)
+19:26:55.460 INFO  manager.WDListener - Before click element -->atext = 

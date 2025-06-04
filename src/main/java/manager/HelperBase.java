@@ -1,9 +1,12 @@
 package manager;
 
+import com.google.common.io.Files;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.io.File;
+import java.io.IOException;
 import java.time.Duration;
 
 public class HelperBase {
@@ -22,6 +25,33 @@ public class HelperBase {
         if (text != null){
             element.sendKeys(text);
         }
+    }
+
+    public boolean isYallaButtonNotActive() {
+        boolean res = isElementPresent(By.cssSelector("button[disabled]"));
+//=========================
+        WebElement element = wd.findElement(By.cssSelector("button[type = 'submit']"));
+        boolean result = element.isEnabled();
+
+        return res && !result;
+
+    }
+
+    public String getErrorText() {
+        return wd.findElement(By.cssSelector("div.error")).getText();
+    }
+
+    public void clearTextBox(By locator){
+        WebElement el = wd.findElement(locator);
+        String os = System.getProperty("os.name");
+
+        if (os.startsWith("Win")){
+            el.sendKeys(Keys.CONTROL, "a");
+        }else{
+            el.sendKeys(Keys.COMMAND, "a");
+        }
+
+        el.sendKeys(Keys.DELETE);
     }
 
     public  void clearNew(WebElement element){
@@ -74,6 +104,16 @@ public class HelperBase {
         pause(2000);
         return wd.findElement(By.cssSelector(".dialog-container>h2")).getText();
 
+    }
+
+    public void getScreen(String link) {
+        TakesScreenshot takesScreenshot = (TakesScreenshot) wd;
+        File tmp =  takesScreenshot.getScreenshotAs(OutputType.FILE);
+        try {
+            Files.copy(tmp,new File(link));
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
     }
 
     public boolean isLogoutVisible() {
