@@ -1,0 +1,252 @@
+21:48:55.504 INFO  manager.ApplicationManager - All tests run in Chrome Browser
+21:48:55.732 INFO  manager.WDListener - Url-->https://ilcarro.web.app/
+21:48:57.001 INFO  tests.TestBase - === Starting test: testLoginSuccess ===
+21:48:57.002 INFO  manager.WDListener - Before find element -->By.xpath: //a[text()=' Log in ']
+21:48:57.006 INFO  manager.WDListener - After find element -->By.xpath: //a[text()=' Log in ']
+21:48:57.027 INFO  manager.WDListener - Location of element (2210, 24)
+21:48:57.042 INFO  manager.TestNGListener - Start test --->testLoginSuccess
+21:48:57.045 INFO  manager.WDListener - Before find element -->By.xpath: //*[normalize-space(text())='Log in']
+21:48:57.061 INFO  manager.WDListener - After find element -->By.xpath: //*[normalize-space(text())='Log in']
+21:48:57.065 INFO  manager.WDListener - Location of element (2210, 24)
+21:48:57.089 INFO  manager.WDListener - Before click element -->atext = Log in
+21:48:57.144 INFO  manager.WDListener - After click element -->a
+21:48:57.144 INFO  manager.WDListener - Before find element -->By.id: email
+21:48:57.158 INFO  manager.WDListener - After find element -->By.id: email
+21:48:57.164 INFO  manager.WDListener - Location of element (1792, 279)
+21:48:57.171 INFO  manager.WDListener - Before click element -->inputtext = 
+21:48:57.217 INFO  manager.WDListener - After click element -->input
+21:48:57.263 INFO  manager.WDListener - sendKeys -->inputtext
+21:48:57.299 INFO  manager.WDListener - sendKeys -->inputtext
+21:48:57.333 INFO  manager.WDListener - sendKeys -->inputtext
+21:48:57.333 INFO  manager.WDListener - Before find element -->By.id: password
+21:48:57.346 INFO  manager.WDListener - After find element -->By.id: password
+21:48:57.351 INFO  manager.WDListener - Location of element (1792, 359)
+21:48:57.358 INFO  manager.WDListener - Before click element -->inputtext = 
+21:48:57.374 INFO  manager.WDListener - After click element -->input
+21:48:57.419 INFO  manager.WDListener - sendKeys -->inputtext
+21:48:57.439 INFO  manager.WDListener - sendKeys -->inputtext
+21:48:57.458 INFO  manager.WDListener - sendKeys -->inputtext
+21:48:57.458 INFO  manager.WDListener - Before find element -->By.xpath: //*[@type='submit']
+21:48:57.475 INFO  manager.WDListener - After find element -->By.xpath: //*[@type='submit']
+21:48:57.475 INFO  manager.WDListener - Location of element (1792, 434)
+21:48:57.496 INFO  manager.WDListener - Before click element -->buttontext = Y’alla!
+21:48:57.536 INFO  manager.WDListener - After click element -->button
+21:48:57.536 INFO  manager.WDListener - Before find element -->By.cssSelector: .dialog-container>h2
+21:48:59.201 INFO  manager.WDListener - After find element -->By.cssSelector: .dialog-container>h2
+21:48:59.206 INFO  manager.WDListener - Location of element (1121, 627)
+21:48:59.231 INFO  manager.WDListener - Before click element -->h2text = Logged in success
+21:48:59.276 INFO  manager.WDListener - After click element -->h2
+21:48:59.276 INFO  tests.TestBase - Test data --> email: tipsytutor92@gmail.com & password: West1234$ 
+21:48:59.276 INFO  manager.WDListener - Before find element -->By.xpath: //button[normalize-space(text())='Ok']
+21:48:59.276 INFO  manager.WDListener - After find element -->By.xpath: //button[normalize-space(text())='Ok']
+21:48:59.292 INFO  manager.WDListener - Location of element (1306, 681)
+21:48:59.318 INFO  manager.WDListener - Before click element -->buttontext = Ok
+21:48:59.353 INFO  manager.WDListener - After click element -->button
+21:48:59.354 INFO  manager.TestNGListener - Success test --->testLoginSuccess
+21:48:59.354 INFO  tests.TestBase - === Starting test: testLoginSuccessModel ===
+21:48:59.355 INFO  manager.WDListener - Before find element -->By.xpath: //a[text()=' Log in ']
+21:49:04.379 INFO  manager.WDListener - Huston, we have a problem!
+21:49:04.379 INFO  manager.WDListener - Object target --> ChromeDriver: chrome on windows (701f412bd6a3d56b9273cbdf1d6cd931)
+21:49:04.379 INFO  manager.WDListener - ******************************
+21:49:04.380 INFO  manager.WDListener - Method name -->findElement
+21:49:04.380 INFO  manager.WDListener - ******************************
+21:49:04.381 INFO  manager.WDListener - InvocationTargetExceptionorg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[text()=' Log in ']"}
+  (Session info: chrome=137.0.7151.104)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [701f412bd6a3d56b9273cbdf1d6cd931, findElement {using=xpath, value=//a[text()=' Log in ']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.104, chrome: {chromedriverVersion: 137.0.7151.40 (84781974514a..., userDataDir: C:\Users\kalin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64540}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64540/devtoo..., se:cdpVersion: 137.0.7151.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 701f412bd6a3d56b9273cbdf1d6cd931
+21:49:04.381 INFO  manager.WDListener - ******************************
+21:49:04.677 INFO  manager.WDListener - Screen with error is --->src/test/screenshots/screen_1828.png
+21:49:04.677 INFO  manager.WDListener - Before find element -->By.xpath: //*[text() = ' Logout ']
+21:49:04.693 INFO  manager.WDListener - After find element -->By.xpath: //*[text() = ' Logout ']
+21:49:04.701 INFO  manager.WDListener - Location of element (2022, 24)
+21:49:04.707 INFO  manager.WDListener - Before click element -->atext = Logout
+21:49:04.756 INFO  manager.WDListener - Before find element -->By.xpath: //*[normalize-space(text())='Log in']
+21:49:04.769 INFO  manager.WDListener - After find element -->By.xpath: //*[normalize-space(text())='Log in']
+21:49:04.774 INFO  manager.WDListener - Location of element (2210, 24)
+21:49:04.790 INFO  manager.WDListener - Before click element -->atext = Log in
+21:49:04.825 INFO  manager.WDListener - After click element -->a
+21:49:04.826 INFO  manager.TestNGListener - Start test --->testLoginSuccessModel
+21:49:04.826 INFO  manager.WDListener - Before find element -->By.xpath: //*[normalize-space(text())='Log in']
+21:49:04.835 INFO  manager.WDListener - After find element -->By.xpath: //*[normalize-space(text())='Log in']
+21:49:04.841 INFO  manager.WDListener - Location of element (2210, 24)
+21:49:04.859 INFO  manager.WDListener - Before click element -->atext = Log in
+21:49:04.893 INFO  manager.WDListener - After click element -->a
+21:49:04.893 INFO  manager.WDListener - Before find element -->By.id: email
+21:49:04.901 INFO  manager.WDListener - After find element -->By.id: email
+21:49:04.907 INFO  manager.WDListener - Location of element (1792, 279)
+21:49:04.915 INFO  manager.WDListener - Before click element -->inputtext = 
+21:49:04.947 INFO  manager.WDListener - After click element -->input
+21:49:05.002 INFO  manager.WDListener - sendKeys -->inputtext
+21:49:05.033 INFO  manager.WDListener - sendKeys -->inputtext
+21:49:05.081 INFO  manager.WDListener - sendKeys -->inputtext
+21:49:05.081 INFO  manager.WDListener - Before find element -->By.id: password
+21:49:05.089 INFO  manager.WDListener - After find element -->By.id: password
+21:49:05.094 INFO  manager.WDListener - Location of element (1792, 359)
+21:49:05.103 INFO  manager.WDListener - Before click element -->inputtext = 
+21:49:05.132 INFO  manager.WDListener - After click element -->input
+21:49:05.167 INFO  manager.WDListener - sendKeys -->inputtext
+21:49:05.188 INFO  manager.WDListener - sendKeys -->inputtext
+21:49:05.210 INFO  manager.WDListener - sendKeys -->inputtext
+21:49:05.211 INFO  manager.WDListener - Before find element -->By.xpath: //*[@type='submit']
+21:49:05.222 INFO  manager.WDListener - After find element -->By.xpath: //*[@type='submit']
+21:49:05.228 INFO  manager.WDListener - Location of element (1792, 434)
+21:49:05.237 INFO  manager.WDListener - Before click element -->buttontext = Y’alla!
+21:49:05.269 INFO  manager.WDListener - After click element -->button
+21:49:05.269 INFO  manager.WDListener - Before find element -->By.cssSelector: .dialog-container>h2
+21:49:05.602 INFO  manager.WDListener - After find element -->By.cssSelector: .dialog-container>h2
+21:49:05.602 INFO  manager.WDListener - Location of element (1149, 627)
+21:49:05.631 INFO  manager.WDListener - Before click element -->h2text = Logged in success
+21:49:05.668 INFO  manager.WDListener - After click element -->h2
+21:49:05.669 INFO  tests.TestBase - Test data --> email: tipsytutor92@gmail.com & password: West1234$ 
+21:49:05.669 INFO  manager.WDListener - Before find element -->By.xpath: //button[normalize-space(text())='Ok']
+21:49:05.675 INFO  manager.WDListener - After find element -->By.xpath: //button[normalize-space(text())='Ok']
+21:49:05.679 INFO  manager.WDListener - Location of element (1304, 678)
+21:49:05.694 INFO  manager.WDListener - Before click element -->buttontext = Ok
+21:49:05.715 INFO  manager.WDListener - After click element -->button
+21:49:05.715 INFO  manager.TestNGListener - Success test --->testLoginSuccessModel
+21:49:05.715 INFO  tests.TestBase - === Starting test: testLoginWrongEmail ===
+21:49:05.715 INFO  manager.WDListener - Before find element -->By.xpath: //a[text()=' Log in ']
+21:49:10.745 INFO  manager.WDListener - Huston, we have a problem!
+21:49:10.745 INFO  manager.WDListener - Object target --> ChromeDriver: chrome on windows (701f412bd6a3d56b9273cbdf1d6cd931)
+21:49:10.745 INFO  manager.WDListener - ******************************
+21:49:10.745 INFO  manager.WDListener - Method name -->findElement
+21:49:10.745 INFO  manager.WDListener - ******************************
+21:49:10.745 INFO  manager.WDListener - InvocationTargetExceptionorg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[text()=' Log in ']"}
+  (Session info: chrome=137.0.7151.104)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [701f412bd6a3d56b9273cbdf1d6cd931, findElement {using=xpath, value=//a[text()=' Log in ']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.104, chrome: {chromedriverVersion: 137.0.7151.40 (84781974514a..., userDataDir: C:\Users\kalin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64540}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64540/devtoo..., se:cdpVersion: 137.0.7151.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 701f412bd6a3d56b9273cbdf1d6cd931
+21:49:10.745 INFO  manager.WDListener - ******************************
+21:49:11.005 INFO  manager.WDListener - Screen with error is --->src/test/screenshots/screen_1893.png
+21:49:11.005 INFO  manager.WDListener - Before find element -->By.xpath: //*[text() = ' Logout ']
+21:49:11.013 INFO  manager.WDListener - After find element -->By.xpath: //*[text() = ' Logout ']
+21:49:11.021 INFO  manager.WDListener - Location of element (2022, 24)
+21:49:11.029 INFO  manager.WDListener - Before click element -->atext = Logout
+21:49:11.074 INFO  manager.WDListener - Before find element -->By.xpath: //*[normalize-space(text())='Log in']
+21:49:11.086 INFO  manager.WDListener - After find element -->By.xpath: //*[normalize-space(text())='Log in']
+21:49:11.093 INFO  manager.WDListener - Location of element (2210, 24)
+21:49:11.109 INFO  manager.WDListener - Before click element -->atext = Log in
+21:49:11.147 INFO  manager.WDListener - After click element -->a
+21:49:11.147 INFO  manager.TestNGListener - Start test --->testLoginWrongEmail
+21:49:11.147 INFO  manager.WDListener - Before find element -->By.xpath: //*[normalize-space(text())='Log in']
+21:49:11.155 INFO  manager.WDListener - After find element -->By.xpath: //*[normalize-space(text())='Log in']
+21:49:11.162 INFO  manager.WDListener - Location of element (2210, 24)
+21:49:11.182 INFO  manager.WDListener - Before click element -->atext = Log in
+21:49:11.214 INFO  manager.WDListener - After click element -->a
+21:49:11.215 INFO  manager.WDListener - Before find element -->By.id: email
+21:49:11.224 INFO  manager.WDListener - After find element -->By.id: email
+21:49:11.229 INFO  manager.WDListener - Location of element (1792, 279)
+21:49:11.236 INFO  manager.WDListener - Before click element -->inputtext = 
+21:49:11.270 INFO  manager.WDListener - After click element -->input
+21:49:11.331 INFO  manager.WDListener - sendKeys -->inputtext
+21:49:11.366 INFO  manager.WDListener - sendKeys -->inputtext
+21:49:11.403 INFO  manager.WDListener - sendKeys -->inputtext
+21:49:11.403 INFO  manager.WDListener - Before find element -->By.id: password
+21:49:11.403 INFO  manager.WDListener - After find element -->By.id: password
+21:49:11.421 INFO  manager.WDListener - Location of element (1792, 359)
+21:49:11.428 INFO  manager.WDListener - Before click element -->inputtext = 
+21:49:11.463 INFO  manager.WDListener - After click element -->input
+21:49:11.502 INFO  manager.WDListener - sendKeys -->inputtext
+21:49:11.525 INFO  manager.WDListener - sendKeys -->inputtext
+21:49:11.549 INFO  manager.WDListener - sendKeys -->inputtext
+21:49:11.549 INFO  manager.WDListener - Before find element -->By.xpath: //*[@type='submit']
+21:49:11.560 INFO  manager.WDListener - After find element -->By.xpath: //*[@type='submit']
+21:49:11.560 INFO  manager.WDListener - Location of element (1792, 453)
+21:49:11.572 INFO  manager.WDListener - Before click element -->buttontext = Y’alla!
+21:49:11.605 INFO  manager.WDListener - After click element -->button
+21:49:11.605 INFO  manager.WDListener - Before find element -->By.xpath: //*[contains(text(), 'look like email')]
+21:49:11.617 INFO  manager.WDListener - After find element -->By.xpath: //*[contains(text(), 'look like email')]
+21:49:11.620 INFO  manager.WDListener - Location of element (1792, 329)
+21:49:11.620 INFO  tests.TestBase - Test data --> email: tipsytutor92gmail.com & password: West1234$ 
+21:49:11.620 INFO  manager.TestNGListener - Success test --->testLoginWrongEmail
+21:49:11.620 INFO  tests.TestBase - === Starting test: testLoginWrongPassword ===
+21:49:11.620 INFO  manager.WDListener - Before find element -->By.xpath: //a[text()=' Log in ']
+21:49:11.632 INFO  manager.WDListener - After find element -->By.xpath: //a[text()=' Log in ']
+21:49:11.637 INFO  manager.WDListener - Location of element (2210, 24)
+21:49:11.637 INFO  manager.TestNGListener - Start test --->testLoginWrongPassword
+21:49:11.637 INFO  manager.WDListener - Before find element -->By.xpath: //*[normalize-space(text())='Log in']
+21:49:11.637 INFO  manager.WDListener - After find element -->By.xpath: //*[normalize-space(text())='Log in']
+21:49:11.655 INFO  manager.WDListener - Location of element (2210, 24)
+21:49:11.668 INFO  manager.WDListener - Before click element -->atext = Log in
+21:49:11.697 INFO  manager.WDListener - After click element -->a
+21:49:11.698 INFO  manager.WDListener - Before find element -->By.id: email
+21:49:11.705 INFO  manager.WDListener - After find element -->By.id: email
+21:49:11.711 INFO  manager.WDListener - Location of element (1792, 279)
+21:49:11.719 INFO  manager.WDListener - Before click element -->inputtext = 
+21:49:11.753 INFO  manager.WDListener - After click element -->input
+21:49:11.797 INFO  manager.WDListener - sendKeys -->inputtext
+21:49:11.822 INFO  manager.WDListener - sendKeys -->inputtext
+21:49:11.856 INFO  manager.WDListener - sendKeys -->inputtext
+21:49:11.857 INFO  manager.WDListener - Before find element -->By.id: password
+21:49:11.863 INFO  manager.WDListener - After find element -->By.id: password
+21:49:11.867 INFO  manager.WDListener - Location of element (1792, 359)
+21:49:11.874 INFO  manager.WDListener - Before click element -->inputtext = 
+21:49:11.898 INFO  manager.WDListener - After click element -->input
+21:49:11.954 INFO  manager.WDListener - sendKeys -->inputtext
+21:49:11.985 INFO  manager.WDListener - sendKeys -->inputtext
+21:49:12.012 INFO  manager.WDListener - sendKeys -->inputtext
+21:49:12.012 INFO  manager.WDListener - Before find element -->By.xpath: //*[@type='submit']
+21:49:12.019 INFO  manager.WDListener - After find element -->By.xpath: //*[@type='submit']
+21:49:12.024 INFO  manager.WDListener - Location of element (1792, 434)
+21:49:12.031 INFO  manager.WDListener - Before click element -->buttontext = Y’alla!
+21:49:12.063 INFO  manager.WDListener - After click element -->button
+21:49:14.068 INFO  manager.WDListener - Before find element -->By.cssSelector: .dialog-container>h2
+21:49:14.073 INFO  manager.WDListener - After find element -->By.cssSelector: .dialog-container>h2
+21:49:14.086 INFO  manager.WDListener - Location of element (1096, 627)
+21:49:14.086 INFO  tests.TestBase - Test data --> email: tipsytutor92@gmail.com & password: West1
+21:49:14.086 INFO  manager.WDListener - Before find element -->By.xpath: //button[normalize-space(text())='Ok']
+21:49:14.086 INFO  manager.WDListener - After find element -->By.xpath: //button[normalize-space(text())='Ok']
+21:49:14.105 INFO  manager.WDListener - Location of element (1306, 681)
+21:49:14.123 INFO  manager.WDListener - Before click element -->buttontext = Ok
+21:49:14.153 INFO  manager.WDListener - After click element -->button
+21:49:14.153 INFO  manager.TestNGListener - Success test --->testLoginWrongPassword
+21:49:14.154 INFO  tests.TestBase - === Starting test: testUnregisteredUser ===
+21:49:14.154 INFO  manager.WDListener - Before find element -->By.xpath: //a[text()=' Log in ']
+21:49:14.160 INFO  manager.WDListener - After find element -->By.xpath: //a[text()=' Log in ']
+21:49:14.165 INFO  manager.WDListener - Location of element (2210, 24)
+21:49:14.171 INFO  manager.TestNGListener - Start test --->testUnregisteredUser
+21:49:14.171 INFO  manager.WDListener - Before find element -->By.xpath: //*[normalize-space(text())='Log in']
+21:49:14.178 INFO  manager.WDListener - After find element -->By.xpath: //*[normalize-space(text())='Log in']
+21:49:14.182 INFO  manager.WDListener - Location of element (2210, 24)
+21:49:14.187 INFO  manager.WDListener - Before click element -->atext = Log in
+21:49:14.225 INFO  manager.WDListener - After click element -->a
+21:49:14.225 INFO  manager.WDListener - Before find element -->By.id: email
+21:49:14.231 INFO  manager.WDListener - After find element -->By.id: email
+21:49:14.236 INFO  manager.WDListener - Location of element (1792, 279)
+21:49:14.244 INFO  manager.WDListener - Before click element -->inputtext = 
+21:49:14.274 INFO  manager.WDListener - After click element -->input
+21:49:14.307 INFO  manager.WDListener - sendKeys -->inputtext
+21:49:14.320 INFO  manager.WDListener - sendKeys -->inputtext
+21:49:14.355 INFO  manager.WDListener - sendKeys -->inputtext
+21:49:14.355 INFO  manager.WDListener - Before find element -->By.id: password
+21:49:14.355 INFO  manager.WDListener - After find element -->By.id: password
+21:49:14.372 INFO  manager.WDListener - Location of element (1792, 359)
+21:49:14.377 INFO  manager.WDListener - Before click element -->inputtext = 
+21:49:14.404 INFO  manager.WDListener - After click element -->input
+21:49:14.438 INFO  manager.WDListener - sendKeys -->inputtext
+21:49:14.456 INFO  manager.WDListener - sendKeys -->inputtext
+21:49:14.471 INFO  manager.WDListener - sendKeys -->inputtext
+21:49:14.471 INFO  manager.WDListener - Before find element -->By.xpath: //*[@type='submit']
+21:49:14.471 INFO  manager.WDListener - After find element -->By.xpath: //*[@type='submit']
+21:49:14.490 INFO  manager.WDListener - Location of element (1792, 434)
+21:49:14.497 INFO  manager.WDListener - Before click element -->buttontext = Y’alla!
+21:49:14.521 INFO  manager.WDListener - After click element -->button
+21:49:16.536 INFO  manager.WDListener - Before find element -->By.cssSelector: .dialog-container>h2
+21:49:16.547 INFO  manager.WDListener - After find element -->By.cssSelector: .dialog-container>h2
+21:49:16.553 INFO  manager.WDListener - Location of element (1096, 627)
+21:49:16.559 INFO  tests.TestBase - Test data --> email: tipsy@gmail.com & password: West1234$ 
+21:49:16.559 INFO  manager.WDListener - Before find element -->By.xpath: //button[normalize-space(text())='Ok']
+21:49:16.564 INFO  manager.WDListener - After find element -->By.xpath: //button[normalize-space(text())='Ok']
+21:49:16.568 INFO  manager.WDListener - Location of element (1306, 681)
+21:49:16.585 INFO  manager.WDListener - Before click element -->buttontext = Ok
+21:49:16.610 INFO  manager.WDListener - After click element -->button
+21:49:16.610 INFO  manager.TestNGListener - Success test --->testUnregisteredUser

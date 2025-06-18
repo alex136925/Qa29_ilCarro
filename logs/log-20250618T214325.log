@@ -1,0 +1,130 @@
+21:43:28.520 INFO  manager.ApplicationManager - All tests run in Chrome Browser
+21:43:28.795 INFO  manager.WDListener - Url-->https://ilcarro.web.app/
+21:43:30.337 INFO  tests.TestBase - === Starting test: negativeSearch ===
+21:43:30.342 INFO  manager.TestNGListener - Start test --->negativeSearch
+21:43:30.342 INFO  manager.WDListener - Before find element -->By.id: city
+21:43:30.362 INFO  manager.WDListener - After find element -->By.id: city
+21:43:30.371 INFO  manager.WDListener - Location of element (256, 289)
+21:43:30.388 INFO  manager.WDListener - Before click element -->inputtext = 
+21:43:30.439 INFO  manager.WDListener - After click element -->input
+21:43:30.489 INFO  manager.WDListener - sendKeys -->inputtext
+21:43:30.523 INFO  manager.WDListener - sendKeys -->inputtext
+21:43:30.541 INFO  manager.WDListener - sendKeys -->inputtext
+21:43:30.541 INFO  manager.WDListener - Before find element -->By.cssSelector: div.pac-item
+21:43:35.582 INFO  manager.WDListener - Huston, we have a problem!
+21:43:35.582 INFO  manager.WDListener - Object target --> ChromeDriver: chrome on windows (5aec479a62798b538fa04cb6e2b8f710)
+21:43:35.582 INFO  manager.WDListener - ******************************
+21:43:35.582 INFO  manager.WDListener - Method name -->findElement
+21:43:35.582 INFO  manager.WDListener - ******************************
+21:43:35.582 INFO  manager.WDListener - InvocationTargetExceptionorg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"div.pac-item"}
+  (Session info: chrome=137.0.7151.104)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5aec479a62798b538fa04cb6e2b8f710, findElement {using=css selector, value=div.pac-item}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.104, chrome: {chromedriverVersion: 137.0.7151.40 (84781974514a..., userDataDir: C:\Users\kalin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64348}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64348/devtoo..., se:cdpVersion: 137.0.7151.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5aec479a62798b538fa04cb6e2b8f710
+21:43:35.582 INFO  manager.WDListener - ******************************
+21:43:35.885 INFO  manager.WDListener - Screen with error is --->src/test/screenshots/screen_1175.png
+21:43:35.886 INFO  manager.TestNGListener - Fail test --->negativeSearch
+21:43:35.888 INFO  manager.WDListener - Before find element -->By.cssSelector: a.logo
+21:43:35.893 INFO  manager.WDListener - After find element -->By.cssSelector: a.logo
+21:43:35.909 INFO  manager.WDListener - Location of element (256, 16)
+21:43:35.909 INFO  manager.WDListener - Before click element -->atext = 
+21:43:36.087 INFO  tests.TestBase - === Starting test: searchAnyPeriodSuccess ===
+21:43:36.087 INFO  manager.TestNGListener - Start test --->searchAnyPeriodSuccess
+21:43:36.087 INFO  manager.WDListener - Before find element -->By.id: city
+21:43:36.098 INFO  manager.WDListener - After find element -->By.id: city
+21:43:36.113 INFO  manager.WDListener - Location of element (256, 289)
+21:43:36.127 INFO  manager.WDListener - Before click element -->inputtext = 
+21:43:36.160 INFO  manager.WDListener - After click element -->input
+21:43:36.227 INFO  manager.WDListener - sendKeys -->inputtext
+21:43:36.245 INFO  manager.WDListener - sendKeys -->inputtext
+21:43:36.280 INFO  manager.WDListener - sendKeys -->inputtext
+21:43:36.280 INFO  manager.WDListener - Before find element -->By.cssSelector: div.pac-item
+21:43:41.298 INFO  manager.WDListener - Huston, we have a problem!
+21:43:41.298 INFO  manager.WDListener - Object target --> ChromeDriver: chrome on windows (5aec479a62798b538fa04cb6e2b8f710)
+21:43:41.298 INFO  manager.WDListener - ******************************
+21:43:41.298 INFO  manager.WDListener - Method name -->findElement
+21:43:41.298 INFO  manager.WDListener - ******************************
+21:43:41.298 INFO  manager.WDListener - InvocationTargetExceptionorg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"div.pac-item"}
+  (Session info: chrome=137.0.7151.104)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5aec479a62798b538fa04cb6e2b8f710, findElement {using=css selector, value=div.pac-item}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.104, chrome: {chromedriverVersion: 137.0.7151.40 (84781974514a..., userDataDir: C:\Users\kalin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64348}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64348/devtoo..., se:cdpVersion: 137.0.7151.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5aec479a62798b538fa04cb6e2b8f710
+21:43:41.298 INFO  manager.WDListener - ******************************
+21:43:41.648 INFO  manager.WDListener - Screen with error is --->src/test/screenshots/screen_1060.png
+21:43:41.648 INFO  manager.TestNGListener - Fail test --->searchAnyPeriodSuccess
+21:43:41.648 INFO  manager.WDListener - Before find element -->By.cssSelector: a.logo
+21:43:41.648 INFO  manager.WDListener - After find element -->By.cssSelector: a.logo
+21:43:41.664 INFO  manager.WDListener - Location of element (256, 16)
+21:43:41.664 INFO  manager.WDListener - Before click element -->atext = 
+21:43:41.823 INFO  tests.TestBase - === Starting test: searchCurrentMonthSuccess ===
+21:43:41.823 INFO  manager.TestNGListener - Start test --->searchCurrentMonthSuccess
+21:43:41.823 INFO  manager.WDListener - Before find element -->By.id: city
+21:43:41.835 INFO  manager.WDListener - After find element -->By.id: city
+21:43:41.838 INFO  manager.WDListener - Location of element (256, 289)
+21:43:41.860 INFO  manager.WDListener - Before click element -->inputtext = 
+21:43:41.901 INFO  manager.WDListener - After click element -->input
+21:43:41.966 INFO  manager.WDListener - sendKeys -->inputtext
+21:43:42.016 INFO  manager.WDListener - sendKeys -->inputtext
+21:43:42.044 INFO  manager.WDListener - sendKeys -->inputtext
+21:43:42.044 INFO  manager.WDListener - Before find element -->By.cssSelector: div.pac-item
+21:43:47.047 INFO  manager.WDListener - Huston, we have a problem!
+21:43:47.047 INFO  manager.WDListener - Object target --> ChromeDriver: chrome on windows (5aec479a62798b538fa04cb6e2b8f710)
+21:43:47.047 INFO  manager.WDListener - ******************************
+21:43:47.047 INFO  manager.WDListener - Method name -->findElement
+21:43:47.047 INFO  manager.WDListener - ******************************
+21:43:47.047 INFO  manager.WDListener - InvocationTargetExceptionorg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"div.pac-item"}
+  (Session info: chrome=137.0.7151.104)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5aec479a62798b538fa04cb6e2b8f710, findElement {using=css selector, value=div.pac-item}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.104, chrome: {chromedriverVersion: 137.0.7151.40 (84781974514a..., userDataDir: C:\Users\kalin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64348}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64348/devtoo..., se:cdpVersion: 137.0.7151.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5aec479a62798b538fa04cb6e2b8f710
+21:43:47.052 INFO  manager.WDListener - ******************************
+21:43:47.320 INFO  manager.WDListener - Screen with error is --->src/test/screenshots/screen_1733.png
+21:43:47.320 INFO  manager.TestNGListener - Fail test --->searchCurrentMonthSuccess
+21:43:47.320 INFO  manager.WDListener - Before find element -->By.cssSelector: a.logo
+21:43:47.330 INFO  manager.WDListener - After find element -->By.cssSelector: a.logo
+21:43:47.337 INFO  manager.WDListener - Location of element (256, 16)
+21:43:47.344 INFO  manager.WDListener - Before click element -->atext = 
+21:43:47.494 INFO  tests.TestBase - === Starting test: searchCurrentYearSuccess ===
+21:43:47.494 INFO  manager.TestNGListener - Start test --->searchCurrentYearSuccess
+21:43:47.494 INFO  manager.WDListener - Before find element -->By.id: city
+21:43:47.504 INFO  manager.WDListener - After find element -->By.id: city
+21:43:47.514 INFO  manager.WDListener - Location of element (256, 289)
+21:43:47.524 INFO  manager.WDListener - Before click element -->inputtext = 
+21:43:47.572 INFO  manager.WDListener - After click element -->input
+21:43:47.654 INFO  manager.WDListener - sendKeys -->inputtext
+21:43:47.687 INFO  manager.WDListener - sendKeys -->inputtext
+21:43:47.721 INFO  manager.WDListener - sendKeys -->inputtext
+21:43:47.721 INFO  manager.WDListener - Before find element -->By.cssSelector: div.pac-item
+21:43:52.762 INFO  manager.WDListener - Huston, we have a problem!
+21:43:52.762 INFO  manager.WDListener - Object target --> ChromeDriver: chrome on windows (5aec479a62798b538fa04cb6e2b8f710)
+21:43:52.762 INFO  manager.WDListener - ******************************
+21:43:52.762 INFO  manager.WDListener - Method name -->findElement
+21:43:52.762 INFO  manager.WDListener - ******************************
+21:43:52.762 INFO  manager.WDListener - InvocationTargetExceptionorg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"div.pac-item"}
+  (Session info: chrome=137.0.7151.104)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5aec479a62798b538fa04cb6e2b8f710, findElement {using=css selector, value=div.pac-item}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.104, chrome: {chromedriverVersion: 137.0.7151.40 (84781974514a..., userDataDir: C:\Users\kalin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64348}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64348/devtoo..., se:cdpVersion: 137.0.7151.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5aec479a62798b538fa04cb6e2b8f710
+21:43:52.762 INFO  manager.WDListener - ******************************
+21:43:53.040 INFO  manager.WDListener - Screen with error is --->src/test/screenshots/screen_1958.png
+21:43:53.040 INFO  manager.TestNGListener - Fail test --->searchCurrentYearSuccess
+21:43:53.042 INFO  manager.WDListener - Before find element -->By.cssSelector: a.logo
+21:43:53.054 INFO  manager.WDListener - After find element -->By.cssSelector: a.logo
+21:43:53.058 INFO  manager.WDListener - Location of element (256, 16)
+21:43:53.058 INFO  manager.WDListener - Before click element -->atext = 

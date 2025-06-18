@@ -26,3 +26,24 @@ dependencies {
 test {
     useTestNG()
 }
+
+task search(type:Test) {
+    useTestNG() {
+        suites 'src/test/resources/search.xml'
+
+        if(project.hasProperty('browser')){
+            systemProperty 'browser', "${browser}"
+        }
+    }
+}
+
+task login(type:Test) {
+    useTestNG() {
+        suites 'src/test/resources/login.xml'
+
+        if(project.hasProperty('browser')){
+            systemProperty 'browser', "${browser}"
+        }
+    }
+}
+
